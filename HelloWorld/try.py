@@ -1,7 +1,11 @@
-try:
-    file = open("somefile.txt", "r")
-except:
-    print("Couldn't open the file. Do you want to reenter the filename?")
+text = "asdf"
+text = text[:-1]
+print(text)
+
+# try:
+#     file = open("somefile.txt", "r")
+# except:
+#     print("Couldn't open the file. Do you want to reenter the filename?")
 
 # wordDic = {}
 # while True:

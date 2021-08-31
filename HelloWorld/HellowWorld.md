@@ -418,3 +418,30 @@ print(datetime.datetime.now())
 seconds_float = some_time.second + some_time.microsecond / 1000000
 # 简单的公式
 ```
+
+## 26 使用套接字建立连接
+
+### 26.1 　文本与字节
+
+encode() 方法：将字符串转换成字节
+
+```python
+hello_str = "Hello!"
+hello_bytes = hello_str.encode('utf-8')
+print(list(hello_bytes))
+# [72, 101, 108, 108, 111, 33]
+```
+
+decode() 方法 ： 将字节转换成字符串
+
+```python
+secret_word = bytes([112, 105, 122, 122, 97])
+print(secret_word.decode('utf-8'))
+# pizza
+```
+
+如果字符串只包含 ASCII 字符，那么可以在字符串前面加上一个字母 b，把该字符串转换为 byte 对象
+
+```python
+some_bytes = b"pepperoni"
+```
